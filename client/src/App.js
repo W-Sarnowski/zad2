@@ -1,0 +1,29 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Documentation from './Documentation';
+import Fib from './Fib';
+import About from "./About";
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          Przykladowa realizacja zadania nr 2 <br />
+          <Link to="/fib">Fib Calc</Link>
+          <Link to="/documentation">Documentation</Link>
+        </header>
+        <div>
+          <Route path="/fib" component={Fib} />
+          <Route path="/documentation" component={Documentation} />
+          <Route path="/" component={About}/>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
