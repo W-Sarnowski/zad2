@@ -1,4 +1,4 @@
-Dokumentacja projektu zadania 2 z Programowania w chmurze olbiczeniowej
+Dokumentacja projektu zadania 2 z Programowania w chmurze obliczeniowej
 
 Dodano plik About.js z informacją o autorach
 Dodano trasę w pliku App do strony about
